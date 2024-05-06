@@ -2,7 +2,7 @@
 
 ## ℹ About the Project
 
-This project was built in a [Rocketseat](https://www.rocketseat.com.br) course. 
+This project is being built in a [Rocketseat](https://www.rocketseat.com.br) course. 
 
 This application is designed to emulate the functionality of GymPass, providing users with the ability to discover and check into nearby gyms seamlessly. The main goal of this app is to enhance the fitness experience by offering a convenient, intuitive platform for gym enthusiasts to manage their gym activities. Users can register, authenticate, and gain access to their check-in history and profile information directly through the app.
 
