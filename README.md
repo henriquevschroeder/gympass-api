@@ -9,7 +9,7 @@ This application is designed to emulate the functionality of GymPass, providing 
 ## Functional Requirements
 
 - [x] It must be possible to register;
-- [ ] It must be possible to authenticate;
+- [x] It must be possible to authenticate;
 - [ ] It must be possible to obtain the profile of a logged-in user;
 - [ ] It must be possible to obtain the number of check-ins performed by the logged-in user;
 - [ ] It must be possible for the user to obtain their check-in history;
@@ -31,6 +31,6 @@ This application is designed to emulate the functionality of GymPass, providing 
 ## Non-Functional Requirements
 
 - [x] User passwords need to be encrypted;
-- [ ] Application data needs to be persisted in a PostgreSQL database;
+- [x] Application data needs to be persisted in a PostgreSQL database;
 - [ ] All data lists must be paginated with 20 items per page;
 - [ ] The user must be identified by a JWT (JSON Web Token);
