@@ -1,5 +1,4 @@
 import { expect, describe, it, beforeEach, afterEach, vi } from 'vitest'
-import { Decimal } from '@prisma/client/runtime/library'
 import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-check-ins-repository'
 import { InMemoryGymsRepository } from '@/repositories/in-memory/in-memory-gyms-repository'
 import { CheckInUseCase } from './check-in'
@@ -86,13 +85,13 @@ describe('Check In Use Case', () => {
   })
 
   it('should not be able to check in on distant gym', async () => {
-    gymsRepository.items.push({
+    gymsRepository.create({
       id: 'gym-02',
       title: 'Shigakure Akademi',
       description: '',
       phone: '',
-      latitude: new Decimal(34.6777115),
-      longitude: new Decimal(135.4036368),
+      latitude: 34.6777115,
+      longitude: 135.4036368,
     })
 
     await expect(() =>
