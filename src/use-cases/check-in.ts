@@ -6,7 +6,7 @@ import { getDistanceBetweenCoordinatesInKm } from '@/utils/get-distance-between-
 import { MaxDistanceError } from './errors/max-distance-error'
 import { MaxNumberOfCheckInsError } from './errors/max-number-of-check-ins-error'
 
-interface CheckInUsecaseParams {
+interface CheckInUseCaseParams {
   userId: string
   gymId: string
   userLatitude: number
@@ -28,7 +28,7 @@ export class CheckInUseCase {
     gymId,
     userLatitude,
     userLongitude,
-  }: CheckInUsecaseParams): Promise<CheckInUseCaseResponse> {
+  }: CheckInUseCaseParams): Promise<CheckInUseCaseResponse> {
     const gym = await this.gymsRepository.findById(gymId)
 
     if (!gym) {
