@@ -22,7 +22,7 @@ This application is designed to emulate the functionality of GymPass, providing 
 ## Business Rules
 
 - [x] Users must not be able to register with a duplicate email;
-- [ ] A user cannot perform 2 check-ins on the same day;
+- [x] A user cannot perform 2 check-ins on the same day;
 - [ ] A user cannot check in if they are not within 100 meters of the gym;
 - [ ] A check-in can only be validated up to 20 minutes after it is created;
 - [ ] A check-in can only be validated by administrators;
